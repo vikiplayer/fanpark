@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <title>fanpark</title>
     <style>
         *{
@@ -15,11 +17,16 @@
             font-size: 50px;
         }
 
+        .font h1, p{
+            font-family: mmontserrat;
+        }
+
         
         </style>
 </head>
 <body>  
-    <div class="container-fuild sticky-top">
+    <!-- sticky-top must add -->
+    <div class="container-fuild sticky-top">  
         <header class="container-fuild bg-danger">
             <div class="row">
                 <div class="col text-end text-white h5 me-5 mt-2 d-flex justify-content-end align-middle">
@@ -38,7 +45,7 @@
         </header>
         <nav class="container-fuild bg-dark pt-2">
             <div class="row">
-                <ul class="col nav justify-content-center align-middle">
+                <ul class="col nav justify-content-center align-middle d-none d-sm-flex">
                     <li class="mx-4 h5">
                         <a href="#" class="text-white text-decoration-none">home</a>
                     </li>
@@ -65,14 +72,273 @@
                     </li>
                 </ul>
             </div>
-            <div class="row bg-dark d-flex justify-content-center md-2 p-1">
-                <input class="col-4 bg-white rounded-3 text-center form-control" style="width: 50%;" type="search" placeholder="🔎search" >
+            <div class="row-fuild d-sm-none d-flex justify-content-center">
+                <select  class="col border-dark bg-dark text-white" name="menu" id="menu">
+                    <option  value="text">
+                        home
+                    </option>
+                    <option value="text">
+                        Discussion
+                    </option>
+                    <option value="text">
+                        Merchandise Store
+                    </option>
+                    <option value="text">
+                        Fan Fiction
+                    </option>
+                    <option value="text">
+                        Quizzes
+                    </option>
+                    <option value="text">
+                        Polls
+                    </option>
+                    <option value="text">
+                        Profiles
+                    </option>
+                    <option value="text">
+                        About
+                    </option>
+                </select>
+            </div>
+            <div class="row-fuild bg-dark d-flex justify-content-center md-2 p-1">
+                <input class="bg-white rounded-3 text-center form-control" style="width: 50%;" type="search" placeholder="🔎search" >
 
             </div>
         </nav>
     </div>
-    <div class="container-fuild">
-        
+    <div class="container-fuild ">
+        <div class="row-fuild d-flex flex-column flex-sm-row flex-xll-column bg-white border border-dark border-bottom-5 d-none d-sm-flex"> 
+            <div class="col my-4 mx-2">
+                <a href="#"><img class="" style="width: 100%;" src="img/p1.jpg" alt=""></a>
+            </div>
+            <div class="col my-4 me-2">
+                <a href="#"><img style="width: 100%;" src="img/p2.jpg" alt=""></a>
+            </div>
+            <div class="col my-4 me-2">
+                <a href="#"><img style="width: 100%;" src="img/p3.jpg" alt=""></a>
+            </div>
+            <div class="col my-4 me-2">
+                <a href="#"><img style="width: 100%;" src="img/p4.jpg" alt=""></a>
+            </div>
+            <div class="col my-4 me-2">
+                <a href="#"><img style="width: 100%;" src="img/p5.jpg" alt=""></a>
+            </div>
+            <div class="col my-4 me-2">
+                <a class="" href="#"><img style="width: 100%;" src="img/p6.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="row-fuild d-sm-none d-flex justify-content-center">
+            <select  class="col border-white" name="club" id="club">
+                <option  value="text">
+                    select your favorite
+                </option>
+                <option  value="text">
+                    marvel
+                </option>
+                <option value="text">
+                    stranger Things
+                </option>
+                <option value="text">
+                    marvel
+                </option>
+                <option value="text">
+                    disney
+                </option>
+                <option value="text">
+                    the boys
+                </option>
+                <option value="text">
+                    dc
+                </option>
+                <option value="text">
+                    star Wars
+                </option>
+            </select>
+        </div>
+
+
+
+
+<!-- 1 -->       
+        <div class="row-fuild bg-white">
+            <div class="col d-none d-md-flex bg-dark p-5 rounded-0">
+                <div class="d-flex justify-content-space-between">
+                    <img class="" style="width: 15%;" src="img/n1.jpg" alt="">
+                    <h1 class="font text-white text-justify align-middle ms-5">"Inside Out 2" Tops Anticipation Polls:
+                        <p class="text-white h3 text-justify">Pixar's highly anticipated sequel "Inside Out 2" is set to release on June 14, 2024.
+                            Featuring a voice cast led by Amy Poehler, the film explores the emotional complexities of a teenage Riley
+                        </p>
+                        <p class="text-white h5 text-justify">Believe it or not, this Pixar sequel finished at the top of our poll by a pretty significant margin.
+                            Sure, the first Inside Out is a beloved, Oscar-winning fan favorite, but that's not a particularly unique designation for a Pixar movie. Still, Amy Poehler looks to lead another strong voice cast, this time joined by Maya Hawke, Ayo Edibiri, Adèle Exarchopoulos, and Paul Walter Hauser voicing new emotions rising up in a now teenaged Riley.
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fuild bg-white">
+            <div class="col d-flex d-md-none bg-dark p-5 rounded-0">
+                <div class="d-block">
+                    <div class="row ">
+                        <img class="mx-auto d-flex justify-content-center" style="width: 75%;" src="img/n1.jpg" alt="">
+                    </div>
+                    <h1 class="font text-white text-justify align-middle mx-auto">"Inside Out 2" Tops Anticipation Polls:
+                        <p class="text-white h3 text-justify">Pixar's highly anticipated sequel "Inside Out 2" is set to release on June 14, 2024.
+                            Featuring a voice cast led by Amy Poehler, the film explores the emotional complexities of a teenage Riley
+                        </p>
+                        <p class="text-white h5 text-justify">Believe it or not, this Pixar sequel finished at the top of our poll by a pretty significant margin.
+                            Sure, the first Inside Out is a beloved, Oscar-winning fan favorite, but that's not a particularly unique designation for a Pixar movie. Still, Amy Poehler looks to lead another strong voice cast, this time joined by Maya Hawke, Ayo Edibiri, Adèle Exarchopoulos, and Paul Walter Hauser voicing new emotions rising up in a now teenaged Riley.
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+<!-- 2 -->
+        <div class="row-fuild bg-dark">
+            <div class="col d-none d-md-flex bg-white p-5 rounded-0">
+                <div class="d-flex">
+                    <h1 class="font text-dark text-justify align-middle ms-5">"A Quiet Place: Day One" Release:
+                        <p class="text-dark h3 text-justify">The prequel to the "A Quiet Place" series, starring Lupita Nyong'o and directed by Michael Sarnoski, is set to release on June 28, 2024. It will depict the early days of the monster invasion
+                        </p>
+                        <p class="text-dark h5 text-justify">Coming in behind Inside Out 2 is this prequel to the popular A Quiet Place franchise. Whereas the first two films took place well after the series' sound-sensitive monsters have already ravaged the planet, this one depicts the early days of the invasion, following a woman named Sam (played by Lupita Nyong'o) who struggles to survive as the creatures land in New York City. Michael Sarnoski makes the leap to blockbuster entertainment after giving us 2021's Pig, taking over directorial duties from John Krasinski.
+                        </p>
+                    </h1>
+                    <img class="ms-5" style="width: 15%;" src="img/n2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fuild bg-dark">
+            <div class="col d-flex d-md-none bg-white p-5 rounded-0">
+                <div class="d-block">
+                    <div class="row ">
+                        <img class="mx-auto d-flex justify-content-center" style="width: 75%;" src="img/n2.jpg" alt="">
+                    </div>
+                    <h1 class="font text-dark text-justify align-middle ms-5">"A Quiet Place: Day One" Release:
+                        <p class="text-dark h3 text-justify">The prequel to the "A Quiet Place" series, starring Lupita Nyong'o and directed by Michael Sarnoski, is set to release on June 28, 2024. It will depict the early days of the monster invasion
+                        </p>
+                        <p class="text-dark h5 text-justify">Coming in behind Inside Out 2 is this prequel to the popular A Quiet Place franchise. Whereas the first two films took place well after the series' sound-sensitive monsters have already ravaged the planet, this one depicts the early days of the invasion, following a woman named Sam (played by Lupita Nyong'o) who struggles to survive as the creatures land in New York City. Michael Sarnoski makes the leap to blockbuster entertainment after giving us 2021's Pig, taking over directorial duties from John Krasinski.
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+ <!-- 3 -->
+        <div class="col d-none d-md-flex bg-dark p-5 rounded-0">
+             <div class="d-flex">
+                <div class="d-flex justify-content-space-between">
+                    <img class="" style="width: 15%;" src="img/n3.jpg" alt="">
+                    <h1 class="font text-white text-justify align-middle ms-5">"Bad Boys: Ride or Die" Hits Theaters:
+                        <p class="text-white h3 text-justify">The fourth installment in the Bad Boys franchise, starring Will Smith and Martin Lawrence, focuses on uncovering corruption within the Miami police department following their captain's death
+                        </p>
+                        <p class="text-white h5 text-justify">Inside Out 2 and A Quiet Place: Day One dominated the votes this month, but the fourth Bad Boys film managed to top the rest of the bunch, proving that the franchise starring Will Smith and Martin Lawrence has still got some gas in the tank. This time around, Mike and Marcus find themselves on the run after the death of their former captain (Joe Pantoliano) compels them to investigate corruption within the Miami police department.
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+       
+        <div class="col d-flex d-md-none bg-dark p-5 rounded-0">
+            <div class="d-block">
+                <div class="row ">
+                    <img class="mx-auto d-flex justify-content-center" style="width: 75%;" src="img/n3.jpg" alt="">
+                </div>
+                    <h1 class="font text-white text-justify align-middle ms-5">"Bad Boys: Ride or Die" Hits Theaters:
+                        <p class="text-white h3 text-justify">The fourth installment in the Bad Boys franchise, starring Will Smith and Martin Lawrence, focuses on uncovering corruption within the Miami police department following their captain's death
+                        </p>
+                        <p class="text-white h5 text-justify">Inside Out 2 and A Quiet Place: Day One dominated the votes this month, but the fourth Bad Boys film managed to top the rest of the bunch, proving that the franchise starring Will Smith and Martin Lawrence has still got some gas in the tank. This time around, Mike and Marcus find themselves on the run after the death of their former captain (Joe Pantoliano) compels them to investigate corruption within the Miami police department.
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+<!-- 4 -->
+        <div class="col d-none d-md-flex bg-white p-5 rounded-0">
+             <div class="d-flex">
+                <div class="d-flex justify-content-space-between">
+                    <img class="" style="width: 15%;" src="img/n4.jpg" alt="">
+                    <h1 class="font text-dark text-justify align-middle ms-5">"Kinds of Kindness" by Yorgos Lanthimos:
+                        <p class="text-dark h3 text-justify">This film, releasing on June 21, 2024, features interconnected stories with a star-studded cast including Emma Stone, Jesse Plemons, and Willem Dafoe. It's expected to be a challenging watch, much like Lanthimos's previous works</p>
+                        <p class="text-dark h5 text-justify">Following just behind Bad Boys is the latest collaboration between writer-director Yorgos Lanthimos and Emma Stone, whose last film, Poor Things, earned four Oscars, including Best Actress for Stone’s work. Kinds of Kindness is arguably more challenging a film than Poor Things (if you can believe that), as it depicts a trio of loosely connected stories with its cast — which also includes people like Jesse Plemons, Hong Chau, Willem Dafoe, and Margaret Qualley, among others — portraying different characters in each segment.
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col d-flex d-md-none bg-white p-5 rounded-0">
+            <div class="d-block">
+                <div class="row ">
+                    <img class="mx-auto d-flex justify-content-center" style="width: 75%;" src="img/n4.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="font text-dark text-justify align-middle ms-5">"Kinds of Kindness" by Yorgos Lanthimos:
+                        <p class="text-dark h3 text-justify">This film, releasing on June 21, 2024, features interconnected stories with a star-studded cast including Emma Stone, Jesse Plemons, and Willem Dafoe. It's expected to be a challenging watch, much like Lanthimos's previous works</p>
+                        <p class="text-dark h5 text-justify">Following just behind Bad Boys is the latest collaboration between writer-director Yorgos Lanthimos and Emma Stone, whose last film, Poor Things, earned four Oscars, including Best Actress for Stone’s work. Kinds of Kindness is arguably more challenging a film than Poor Things (if you can believe that), as it depicts a trio of loosely connected stories with its cast — which also includes people like Jesse Plemons, Hong Chau, Willem Dafoe, and Margaret Qualley, among others — portraying different characters in each segment.
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+<!-- 5 -->
+            <div class="col d-none d-md-flex bg-dark p-5 rounded-0">
+                <div class="d-flex">
+                <div class="d-flex justify-content-space-between">
+                    <img class="" style="width: 15%;" src="img/n5.jpg" alt="">
+                    <h1 class="font text-white text-justify align-middle ms-5">"Hit Man" Premieres on Netflix:
+                        <p class="text-white h3 text-justify">Richard Linklater’s romantic crime comedy starring Glen Powell and Adria Arjona hits Netflix on June 7, 2024. The story revolves around a police officer who poses as a hitman and falls for a woman trying to hire him
+                        </p>
+                        <p class="text-white h5 text-justify">Lastly, we have this romantic crime comedy from Richard Linklater starring Glen Powell and Adria Arjona. The story, based on a magazine article in Texas Monthly from 2001, centers on a New Orleans police officer who poses as a hitman to arrest those seeking out his services but ends up falling for a woman who attempts to hire him to kill her abusive husband. Netflix debuted the film in theaters in late May, but it hits the streaming service on June 7.                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col d-flex d-md-none bg-dark p-5 rounded-0">
+            <div class="d-block">
+                <div class="row ">
+                    <img class="mx-auto d-flex justify-content-center" style="width: 75%;" src="img/n5.jpg" alt="">
+                </div>
+                <div class="d-flex justify-content-space-between">
+                    <h1 class="font text-white text-justify align-middle ms-5">"Hit Man" Premieres on Netflix:
+                        <p class="text-white h3 text-justify">Richard Linklater's romantic crime comedy starring Glen Powell and Adria Arjona hits Netflix on June 7, 2024. The story revolves around a police officer who poses as a hitman and falls for a woman trying to hire him
+                        </p>
+                        <p class="text-white h5 text-justify">Lastly, we have this romantic crime comedy from Richard Linklater starring Glen Powell and Adria Arjona. The story, based on a magazine article in Texas Monthly from 2001, centers on a New Orleans police officer who poses as a hitman to arrest those seeking out his services but ends up falling for a woman who attempts to hire him to kill her abusive husband. Netflix debuted the film in theaters in late May, but it hits the streaming service on June 7.                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+    <footer>
+        <div>
+            <div class="row bg-dark mt-3">
+                <p class="text-white text-center">© Copyright 2024. All Rights Reserved.</p>
+            </div>
+            <div class="row bg-dark text-center">
+                <ul class="list-inline text-white ">
+                    <li class="list-inline-item">
+                        Follow us on
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white " href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        for the latest updates and discussions.
+                    </li>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -26,7 +26,7 @@
 </head>
 <body>  
     <!-- sticky-top must add -->
-    <div class="container-fuild sticky-top">  
+    <div class="container-fuild">  
         <header class="container-fuild bg-danger">
             <div class="row">
                 <div class="col text-end text-white h5 me-5 mt-2 d-flex justify-content-end align-middle">
@@ -39,70 +39,41 @@
                     </div>            
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row d-flex justify-content-center">
                 <h1 class="logo text-dark d-flex justify-content-center" >fan<p class="logo text-white">park</p></h1>
             </div>
         </header>
-        <nav class="container-fuild bg-dark pt-2">
-            <div class="row">
-                <ul class="col nav justify-content-center align-middle d-none d-sm-flex">
-                    <li class="mx-4 h5">
-                        <a href="home.html" class="text-white text-decoration-none">home</a>
+        <nav class="navbar navbar-expand-lg bg-dark d-flex justify-content-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-4 h5">
+                        <a href="home.html" class="nav-link text-white">home</a>
                     </li>
-                    <li class="text-white mx-4 h5">
-                        <a href="Discussion.html" class="text-white text-decoration-none">Discussion</a>
+                    <li class="nav-item text-white mx-4 h5">
+                        <a href="Discussion.html" class="nav-link text-white">Discussion</a>
                     </li>
-                    <li class="text-white mx-4 h5">
-                        <a href="store.html" class="text-white text-decoration-none">Merchandise Store</a>
+                    <li class="nav-item text-white mx-4 h5">
+                        <a href="store.html" class="nav-link text-white">Merchandise Store</a>
                     </li>
-                    <li class="text-white mx-4 h5">
-                        <a href="fan.html" class="text-white text-decoration-none">Fan Fiction</a>
+                    <li class="nav-item text-white mx-4 h5">
+                        <a href="fan.html" class="nav-link text-light">Fan Fiction</a>
                     </li>
-                    <li class="text-white mx-4 h5">
-                        <a href="quizzes.html" class="text-white text-decoration-none">Quizzes</a>
+                    <li class="nav-item text-white mx-4 h5">
+                        <a href="quizzes.html" class="nav-link text-light active">Quizzes</a>
                     </li>
-                    <li class="text-white mx-4 h5">
-                        <a href="#" class="text-white text-decoration-none">Polls</a>
+                    <li class="nav-item text-white mx-4 h5">
+                        <a href="polls.html" class="nav-link text-white">Polls</a>
                     </li>
-                    <li class="text-white mx-4 h5">
-                        <a href="#" class="text-white text-decoration-none">Profiles</a>
+                    <li class="nav-item text-white mx-4 h5">
+                        <a href="#" class="nav-link text-white">Profiles</a>
                     </li>
-                    <li class="text-white mx-4 h5">
-                        <a href="#" class="text-white text-decoration-none">About</a>
+                    <li class="nav-item text-white mx-4 h5">
+                        <a href="#" class="nav-link text-white">About</a>
                     </li>
                 </ul>
-            </div>
-            <div class="row-fuild d-sm-none d-flex justify-content-center">
-                <select  class="col border-dark bg-dark text-white" name="menu" id="menu">
-                    <option  value="text">
-                        <a href="home.html" class="text-white text-decoration-none">home</a>
-                    </option>
-                    <option value="text">
-                        <a href="Discussion.html" class="text-white text-decoration-none">Discussion</a>
-                    </option>
-                    <option value="text">
-                        <a href="store.html" class="text-white text-decoration-none">Merchandise Store</a>
-                    </option>
-                    <option value="text">
-                        <a href="fan.html" class="text-white text-decoration-none">Fan Fiction</a>
-                    </option>
-                    <option value="text">
-                        <a href="quizzes.html" class="text-white text-decoration-none">Quizzes</a>
-                    </option>
-                    <option value="text">
-                        <a href="#" class="text-white text-decoration-none">Polls</a>
-                    </option>
-                    <option value="text">
-                        <a href="#" class="text-white text-decoration-none">Profiles</a>
-                    </option>
-                    <option value="text">
-                        <a href="#" class="text-white text-decoration-none">About</a>
-                    </option>
-                </select>
-            </div>
-            <div class="row-fuild bg-dark d-flex justify-content-center md-2 p-1">
-                <input class="bg-white rounded-3 text-center form-control" style="width: 50%;" type="search" placeholder="🔎search" >
-
             </div>
         </nav>
     </div>
@@ -112,7 +83,7 @@
             <div class="col d-none d-md-flex bg-white p-5 rounded-0">
                 <div class="d-flex justify-content-space-between align-items-center">
                     <img class="rounded-3" style="width: 15%;" src="img/f1.jpg" alt="">
-                    <h1 class="font text-dark text-justify align-middle ms-5">Legacy of Hogwarts
+                    <h1 class="font text-dark text-justify align-middle mx-5">Legacy of Hogwarts
                         <p class="text-dark h3 text-justify">The Next Generation of Magic
                         </p>
                         <p class="text-dark h5 text-justify">This Harry Potter fan fiction explores the next generation of students at Hogwarts School of Witchcraft and Wizardry. The story focuses on Albus Potter and his friends as they uncover new mysteries and face dark forces threatening the wizarding world.
@@ -142,7 +113,7 @@
         <div class="row-fuild bg-dark">
             <div class="col d-none d-md-flex bg-dark p-5 rounded-0">
                 <div class="d-flex align-items-center">
-                    <h1 class="font text-white text-justify align-middle ms-5">The Force Reborn
+                    <h1 class="font text-white text-justify align-middle mx-5">The Force Reborn
                         <p class="text-white h3 text-justify">Rey's Journey to Restore the Jedi
                         </p>
                         <p class="text-white h5 text-justify">A Star Wars fan fiction set after the events of "The Rise of Skywalker." It follows Rey as she rebuilds the Jedi Order and encounters new allies and enemies in her quest to bring balance to the Force. </p>
@@ -172,7 +143,7 @@
              <div class="d-flex">
                 <div class="d-flex justify-content-space-between align-items-center ">
                     <img class="rounded-3" style="width: 15%;" src="img/f3.jpg" alt="">
-                    <h1 class="font text-dark text-justify align-middle ms-5">"A New Age of Heroes
+                    <h1 class="font text-dark text-justify align-middle mx-5">"A New Age of Heroes
                         <p class="text-dark h3 text-justify">The Next Generation of the MCU
                         </p>
                         <p class="text-dark h5 text-justify"> This Marvel Cinematic Universe fan fiction takes place after "Avengers: Endgame." It introduces new superheroes and explores how they step up to fill the void left by the original Avengers. The story delves into their struggles, triumphs, and the challenges of being a hero in a changing world. </p>
@@ -199,7 +170,7 @@
         <div class="col d-none d-md-flex bg-dark p-5 rounded-0">
              <div class="d-flex align-items-center">
                 <div class="d-flex justify-content-space-between align-items-center">
-                    <h1 class="font text-white text-justify align-middle ms-5">The Targaryen Chronicles
+                    <h1 class="font text-white text-justify align-middle mx-5">The Targaryen Chronicles
                         <p class="text-white h3 text-justify">The Rise and Fall of the Dragonlords</p>
                         <p class="text-white h5 text-justify">A Game of Thrones fan fiction that focuses on the Targaryen dynasty. The story explores the history of House Targaryen, from their rise to power to the events leading up to the fall of King's Landing. It delves into the complex relationships, political intrigue, and epic battles that shaped the Seven Kingdoms.  </p>
                     </h1>
@@ -223,18 +194,19 @@
         </div>
 
 <!-- 5 -->
-            <div class="col d-none d-md-flex bg-white p-5 rounded-0">
-                <div class="d-flex">
+        <div class="col d-none d-md-flex bg-white p-5 rounded-0">
+            <div class="d-flex">
                 <div class="d-flex justify-content-space-between align-items-center">
                     <img class="rounded-3" style="width: 15%;" src="img/f5.jpg" alt="">
-                    <h1 class="font text-dark text-justify align-middle ms-5">The Last of Us: Reclaimed
+                    <h1 class="font text-dark text-justify align-middle mx-5">The Last of Us: Reclaimed
                         <p class="text-dark h3 text-justify">Survival in a Post-Apocalyptic World
                         </p>
-                        <p class="text-dark h5 text-justify"> A fan fiction based on the video game "The Last of Us." It follows new characters in the post-apocalyptic world as they navigate through dangerous territories, build new communities, and confront both human and infected threats. The story captures the emotional depth and intense survival elements that made the original game a hit.  </h1>
+                        <p class="text-dark h5 text-justify"> A fan fiction based on the video game "The Last of Us." It follows new characters in the post-apocalyptic world as they navigate through dangerous territories, build new communities, and confront both human and infected threats. The story captures the emotional depth and intense survival elements that made the original game a hit.</h1>
                 </div>
             </div>
         </div>
-
+        <hr>
+                
         <div class="col d-flex d-md-none bg-white p-5 rounded-0">
             <div class="d-block">
                 <div class="row ">
@@ -251,31 +223,33 @@
     </div>
 </div>
 
-    <footer>
-        <div>
-            <div class="row bg-dark mt-3">
-                <p class="text-white text-center">© Copyright 2024. All Rights Reserved.</p>
-            </div>
-            <div class="row bg-dark text-center">
-                <ul class="list-inline text-white ">
-                    <li class="list-inline-item">
-                        Follow us on
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="text-white " href="#"><i class="fa-brands fa-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="text-white" href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        for the latest updates and discussions.
-                    </li>
-            </div>
+<footer>
+    <div>
+        <div class="row bg-dark mt-1 d-flex justify-content-center">
+            <p class="text-white pt-2">© Copyright 2024. All Rights Reserved.</p>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <div class="row bg-dark d-flex justify-content-center">
+            <ul class="list-inline text-white ">
+                <li class="list-inline-item">
+                    Follow us on
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-white " href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-white" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    for the latest updates and discussions.
+                </li>
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

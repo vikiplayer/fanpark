@@ -2,6 +2,7 @@
     font-family: bebas neue;
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 .logo{
     font-family: bangers;
@@ -10,4 +11,22 @@
 
 .font h1, p{
     font-family: mmontserrat;
+}
+
+.s1{
+    width: 80%;
+    margin: auto;
+}
+
+.s2{
+    width: 15%;
+}
+
+
+.s3 {
+    width: 100%;
+}
+
+.s4 {
+    width: fit-content;
 }
